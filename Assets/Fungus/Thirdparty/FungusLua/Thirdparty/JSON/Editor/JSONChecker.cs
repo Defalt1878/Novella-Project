@@ -28,7 +28,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-public class JSONChecker : EditorWindow {
+public class JSONChecker : EditorWindow
+{
 	string JSON = @"{
 	""TestObject"": {
 		""SomeText"": ""Blah"",
@@ -43,17 +44,23 @@ public class JSONChecker : EditorWindow {
 		""SomeEmptyArray"": [ ],
 		""EmbeddedObject"": ""{\""field\"":\""Value with \\\""escaped quotes\\\""\""}""
 	}
-}";	  //dat string literal...
+}"; //dat string literal...
+
 	string URL = "";
 	JSONObject j;
+
 	[MenuItem("Window/JSONChecker")]
-	static void Init() {
+	static void Init()
+	{
 		GetWindow(typeof(JSONChecker));
 	}
-	void OnGUI() {
+
+	void OnGUI()
+	{
 		JSON = EditorGUILayout.TextArea(JSON);
 		GUI.enabled = !string.IsNullOrEmpty(JSON);
-		if(GUILayout.Button("Check JSON")) {
+		if (GUILayout.Button("Check JSON"))
+		{
 #if PERFTEST
             Profiler.BeginSample("JSONParse");
 			j = JSONObject.Create(JSON);
@@ -66,21 +73,28 @@ public class JSONChecker : EditorWindow {
 #endif
 			Debug.Log(j.ToString(true));
 		}
+
 		EditorGUILayout.Separator();
 		URL = EditorGUILayout.TextField("URL", URL);
-		if (GUILayout.Button("Get JSON")) {
+		if (GUILayout.Button("Get JSON"))
+		{
 			Debug.Log(URL);
 #if UNITY_2017_1_OR_NEWER
 			var test = new UnityWebRequest(URL);
 			test.SendWebRequest();
-			while (!test.isDone && !test.isNetworkError) ;
+			while (!test.isDone && test.result != UnityWebRequest.Result.ConnectionError)
+			{
+			}
 #else
 			var test = new WWW(URL);
  			while (!test.isDone) ;
 #endif
-			if (!string.IsNullOrEmpty(test.error)) {
+			if (!string.IsNullOrEmpty(test.error))
+			{
 				Debug.Log(test.error);
-			} else {
+			}
+			else
+			{
 #if UNITY_2017_1_OR_NEWER
 				var text = test.downloadHandler.text;
 #else
@@ -91,13 +105,14 @@ public class JSONChecker : EditorWindow {
 				Debug.Log(j.ToString(true));
 			}
 		}
-		if(j) {
+
+		if (j)
+		{
 			//Debug.Log(System.GC.GetTotalMemory(false) + "");
-			if(j.type == JSONObject.Type.NULL)
+			if (j.type == JSONObject.Type.NULL)
 				GUILayout.Label("JSON fail:\n" + j.ToString(true));
 			else
 				GUILayout.Label("JSON success:\n" + j.ToString(true));
-
 		}
 	}
 }
