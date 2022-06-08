@@ -4076,8 +4076,7 @@ MonoBehaviour:
     height: 2818.8503
   selectedBlocks:
   - {fileID: 1390555298}
-  selectedCommands:
-  - {fileID: 1390555392}
+  selectedCommands: []
   variables:
   - {fileID: 1390555396}
   description: 'Example scene from Sherlock: The Game Is On'
