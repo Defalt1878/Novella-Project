@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using MoonSharp.Interpreter;
 using System.Collections.Generic;
+using Fungus.Scripts.Components;
 
 namespace Fungus
 {

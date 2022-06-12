@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using System.Text;
+using Fungus.Scripts.Components;
 
 namespace Fungus
 {
