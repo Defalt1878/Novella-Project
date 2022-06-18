@@ -45,5 +45,7 @@
 
 ## Ссылки:
 * [Карточка проекта](https://project.ai-info.ru/teams/ussr-squad)
-* [Календарный план команды: https](docs.google.com/document/d/1P8imBGbakokr3J2IP2i-g5kQ-Rxsbj6XgbVEqHdhJ4w/edit?usp=sharing)
-* [Ссылка на сценарий игры: https](docs.google.com/document/d/1VrO7ZI0-1WdgLCYN0gA9CWnvw0qFwJep/edit?usp=sharing&ouid=106992786942168072568&rtpof=true&sd=true)
+* [Отчет](https://docs.google.com/document/d/1nioPMuQBrSExhj6PTFAJ7Pdd_fX6h0six4olhrr79mY/edit?usp=sharing)
+* [Календарный план команды](docs.google.com/document/d/1P8imBGbakokr3J2IP2i-g5kQ-Rxsbj6XgbVEqHdhJ4w/edit?usp=sharing)
+* [Ссылка на сценарий игры](docs.google.com/document/d/1VrO7ZI0-1WdgLCYN0gA9CWnvw0qFwJep/edit?usp=sharing&ouid=106992786942168072568&rtpof=true&sd=true)
+* [Демо-версия игры](https://disk.yandex.ru/d/hxqJZT2Z2mp_Kg)
