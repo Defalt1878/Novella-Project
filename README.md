@@ -43,7 +43,7 @@
 * Тематические мини-игры
 * Начальный экран и меню паузы
 
-## Ссылки
+## Ссылки:
 * [Карточка проекта](https://project.ai-info.ru/teams/ussr-squad)
 * [Календарный план команды: https](docs.google.com/document/d/1P8imBGbakokr3J2IP2i-g5kQ-Rxsbj6XgbVEqHdhJ4w/edit?usp=sharing)
 * [Ссылка на сценарий игры: https](docs.google.com/document/d/1VrO7ZI0-1WdgLCYN0gA9CWnvw0qFwJep/edit?usp=sharing&ouid=106992786942168072568&rtpof=true&sd=true)
